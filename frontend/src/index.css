@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream font-sans text-dark antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-bold tracking-tight text-dark;
+  }
+
+  ::selection {
+    @apply bg-secondary text-dark;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-all duration-200 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white shadow-md shadow-primary/30 hover:-translate-y-0.5 hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/30;
+  }
+
+  .btn-dark {
+    @apply btn bg-dark text-white hover:-translate-y-0.5 hover:bg-dark-soft hover:shadow-lg;
+  }
+
+  .btn-accent {
+    @apply btn bg-accent text-white hover:bg-accent-dark;
+  }
+
+  .btn-outline {
+    @apply btn border border-dark/15 bg-white text-dark hover:border-dark/40 hover:bg-light/40;
+  }
+
+  .btn-ghost {
+    @apply btn text-dark hover:bg-dark/5;
+  }
+
+  .btn-danger {
+    @apply btn bg-red-600 text-white hover:bg-red-700;
+  }
+
+  .card {
+    @apply rounded-3xl border border-dark/5 bg-white shadow-card;
+  }
+
+  .label {
+    @apply mb-1.5 block text-sm font-semibold text-dark;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-dark/15 bg-white px-4 py-2.5 text-sm text-dark placeholder:text-dark/40 transition focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/15;
+  }
+
+  .input-error {
+    @apply border-red-400 focus:border-red-500 focus:ring-red-500/15;
+  }
+
+  .field-error {
+    @apply mt-1.5 text-xs font-medium text-red-600;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold;
+  }
+
+  .section-title {
+    @apply text-3xl font-extrabold sm:text-4xl;
+  }
+
+  .eyebrow {
+    @apply text-sm font-bold uppercase tracking-widest text-primary;
+  }
+}
+
+/* Notifications */
+.Toastify__toast {
+  @apply rounded-2xl font-sans text-sm font-medium shadow-soft;
+}
+
+.Toastify__progress-bar--success {
+  @apply bg-primary;
+}
