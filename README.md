@@ -279,4 +279,3 @@ npm test
 
 - **Backend**: 23 API tests (Jest + Supertest) covering authentication, permissions, ownership checks, messaging, uploads and error handling. The database layer is mocked, so no MySQL server is needed.
 - **Frontend**: 13 tests (Jest + Testing Library) for the 404 page, the profanity filter and the offered-services validator.
-# Mingle
