@@ -1,0 +1,11 @@
+{
+  "root": true,
+  "env": { "node": true, "es2022": true, "jest": true },
+  "extends": ["airbnb-base", "prettier"],
+  "parserOptions": { "ecmaVersion": "latest" },
+  "rules": {
+    "no-console": ["warn", { "allow": ["info", "warn", "error"] }],
+    "camelcase": ["error", { "properties": "never", "ignoreDestructuring": true }],
+    "no-underscore-dangle": "off"
+  }
+}

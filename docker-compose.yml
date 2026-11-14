@@ -1,0 +1,22 @@
+# Base de données MySQL pour le développement local.
+# Démarrage : docker compose up -d   puis   npm run migrate
+services:
+  db:
+    image: mysql:8.4
+    container_name: mingle-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: mingle
+      MYSQL_DATABASE: mingle
+    ports:
+      - "3306:3306"
+    volumes:
+      - mingle-db-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-pmingle"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  mingle-db-data:

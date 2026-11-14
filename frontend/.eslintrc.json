@@ -1,0 +1,33 @@
+{
+  "root": true,
+  "env": { "browser": true, "es2022": true, "jest": true },
+  "extends": ["airbnb", "airbnb/hooks", "prettier"],
+  "parserOptions": { "ecmaVersion": "latest", "sourceType": "module" },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@assets", "./src/assets"],
+          ["@components", "./src/components"],
+          ["@contexts", "./src/contexts"],
+          ["@pages", "./src/pages"],
+          ["@services", "./src/services"]
+        ],
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "react/function-component-definition": "off",
+    "react/no-array-index-key": "warn",
+    "import/prefer-default-export": "off",
+    "import/extensions": ["error", "ignorePackages", { "js": "never", "jsx": "never" }],
+    "import/no-unresolved": ["error", { "ignore": ["^@(assets|components|contexts|pages|services)/"] }],
+    "jsx-a11y/label-has-associated-control": ["error", { "assert": "either" }],
+    "no-console": ["warn", { "allow": ["error"] }]
+  }
+}

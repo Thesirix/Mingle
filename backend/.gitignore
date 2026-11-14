@@ -1,0 +1,8 @@
+node_modules
+coverage
+.env
+
+# Fichiers envoyés par les utilisateurs (on garde les images de démonstration)
+public/uploads/*
+!public/uploads/categories/
+!public/uploads/services/

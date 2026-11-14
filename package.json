@@ -1,0 +1,19 @@
+{
+  "name": "mingle",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mingle, plateforme d'échange de services gratuits entre particuliers",
+  "scripts": {
+    "postinstall": "cd frontend && npm install && cd ../backend && npm install",
+    "migrate": "npm --prefix backend run migrate",
+    "dev": "concurrently -c green,yellow -n front,back \"npm --prefix frontend run dev\" \"npm --prefix backend run dev\"",
+    "dev-front": "npm --prefix frontend run dev",
+    "dev-back": "npm --prefix backend run dev",
+    "build": "npm --prefix frontend run build",
+    "test": "npm --prefix backend test && npm --prefix frontend test",
+    "lint": "npm --prefix frontend run lint && npm --prefix backend run lint"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
