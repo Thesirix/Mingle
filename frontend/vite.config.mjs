@@ -5,7 +5,9 @@ import react from "@vitejs/plugin-react";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-export default defineConfig({
+// `vite build --mode demo` : démo statique servie sur GitHub Pages sous /Mingle/
+export default defineConfig(({ mode }) => ({
+  base: mode === "demo" ? process.env.DEMO_BASE ?? "/Mingle/" : "/",
   plugins: [react()],
   resolve: {
     alias: {
@@ -16,4 +18,4 @@ export default defineConfig({
       "@services": path.resolve(__dirname, "src/services"),
     },
   },
-});
+}));

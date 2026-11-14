@@ -15,6 +15,8 @@ Publish what you can do, find help nearby, chat in real time. No money involved,
 [![Docker](https://img.shields.io/badge/Dev_DB-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com)
 [![Jest](https://img.shields.io/badge/Tests-Jest-C21325?style=flat-square&logo=jest&logoColor=white)](https://jestjs.io)
 
+**[Try the live demo](https://thesirix.github.io/Mingle/)**
+
 </div>
 
 ![Mingle home page](docs/screenshots/home.png)
@@ -103,6 +105,12 @@ The other demo members (`karim.benali`, `sophie.durand`, `lucas.petit`, all `@ex
 
 > [!WARNING]
 > If you deploy Mingle publicly with the demo data, change the admin password first: anyone reading this README could otherwise sign in as admin on your deployment.
+
+## Live demo
+
+[thesirix.github.io/Mingle](https://thesirix.github.io/Mingle/) runs the real React app with no server: the API is simulated in the browser (`frontend/src/services/demo/`) and data is kept in `localStorage`, so you can sign up, publish, comment and chat freely. A "Reset" button in the top banner restores the demo data.
+
+The demo is built with `npm run build:demo` in `frontend/` and deployed to GitHub Pages by `.github/workflows/pages.yml` on every push to `main`.
 
 ## Getting started
 
@@ -276,5 +284,3 @@ npm test
 
 - **Backend**: 23 API tests (Jest + Supertest) covering authentication, permissions, ownership checks, messaging, uploads and error handling. The database layer is mocked, so no MySQL server is needed.
 - **Frontend**: 13 tests (Jest + Testing Library) for the 404 page, the profanity filter and the offered-services validator.
-# Mingle
-# Mingle

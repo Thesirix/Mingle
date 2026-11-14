@@ -8,10 +8,12 @@ import Header from "@components/layout/Header";
 import Footer from "@components/layout/Footer";
 import AnimatedRoutes from "@components/layout/AnimatedRoutes";
 import ChatWidget from "@components/chat/ChatWidget";
+import DemoBanner from "@components/layout/DemoBanner";
+import { IS_DEMO } from "@services/api";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <AuthProvider>
         <ChatProvider>
           <div className="relative flex min-h-screen flex-col overflow-x-clip">
@@ -20,6 +22,7 @@ export default function App() {
               aria-hidden="true"
               className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[680px] bg-gradient-to-b from-secondary/45 via-light/50 to-transparent"
             />
+            {IS_DEMO && <DemoBanner />}
             <Header />
             <main className="flex-1">
               <AnimatedRoutes />
