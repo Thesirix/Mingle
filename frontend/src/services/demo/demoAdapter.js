@@ -4,7 +4,7 @@
 import { AxiosError } from "axios";
 import createSeed from "./seed";
 
-const STORAGE_KEY = "mingle_demo_db_v1";
+const STORAGE_KEY = "mingle_demo_db_v2";
 const TOKEN_TTL = 7 * 24 * 3600;
 
 /* ------------------------------------------------------------------ stockage */

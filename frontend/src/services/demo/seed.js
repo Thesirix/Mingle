@@ -107,7 +107,7 @@ export default function createSeed() {
     category_id: categoryId,
     status,
     created_at: createdAt,
-    illustration: `/uploads/services/${image}`,
+    illustration: image ? `/uploads/services/${image}` : null,
   });
 
   const services = [
@@ -119,7 +119,7 @@ export default function createSeed() {
       1,
       true,
       ago(30, 4),
-      "menage-1.webp"
+      null
     ),
     service(
       2,
@@ -149,7 +149,7 @@ export default function createSeed() {
       2,
       false,
       ago(6, 1),
-      "aines-2.webp"
+      null
     ),
     service(
       5,
