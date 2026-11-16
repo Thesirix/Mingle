@@ -50,16 +50,16 @@ backend/    REST API (Express, MySQL, JWT authentication)
 
 <table>
   <tr>
-    <td><img src="docs/screenshots/services.png" alt="Services list" /></td>
-    <td><img src="docs/screenshots/service-detail.png" alt="Service detail" /></td>
+    <td><img src="docs/screenshots/browse-services.png" alt="Services list" /></td>
+    <td><img src="docs/screenshots/service-detail-page.png" alt="Service detail" /></td>
   </tr>
   <tr>
     <td align="center"><b>Browse services</b></td>
     <td align="center"><b>Service detail &amp; comments</b></td>
   </tr>
   <tr>
-    <td><img src="docs/screenshots/messaging.png" alt="Messaging" /></td>
-    <td><img src="docs/screenshots/dashboard.png" alt="Dashboard" /></td>
+    <td><img src="docs/screenshots/messaging-chat.png" alt="Messaging" /></td>
+    <td><img src="docs/screenshots/dashboard-claire.png" alt="Dashboard" /></td>
   </tr>
   <tr>
     <td align="center"><b>Built-in messaging</b></td>
@@ -67,7 +67,7 @@ backend/    REST API (Express, MySQL, JWT authentication)
   </tr>
   <tr>
     <td><img src="docs/screenshots/categories.png" alt="Categories" /></td>
-    <td><img src="docs/screenshots/profile.png" alt="Profile" /></td>
+    <td><img src="docs/screenshots/member-profile.png" alt="Profile" /></td>
   </tr>
   <tr>
     <td align="center"><b>Categories (admin view)</b></td>

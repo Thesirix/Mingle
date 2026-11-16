@@ -129,7 +129,7 @@ export default function createSeed() {
       1,
       true,
       ago(4, 2),
-      "menage-2.webp"
+      "repassage.webp"
     ),
     service(
       3,
@@ -139,7 +139,7 @@ export default function createSeed() {
       2,
       true,
       ago(22, 6),
-      "aines-1.webp"
+      "courses-compagnie.webp"
     ),
     service(
       4,
@@ -159,7 +159,7 @@ export default function createSeed() {
       3,
       true,
       ago(26, 3),
-      "numerique-1.webp"
+      "initiation-smartphone.webp"
     ),
     service(
       6,
@@ -169,7 +169,7 @@ export default function createSeed() {
       3,
       true,
       ago(9, 5),
-      "numerique-2.webp"
+      "depannage-ordinateur.webp"
     ),
     service(
       7,
@@ -179,7 +179,7 @@ export default function createSeed() {
       4,
       true,
       ago(15, 8),
-      "bricolage-1.webp"
+      "montage-meubles.webp"
     ),
     service(
       8,
@@ -189,7 +189,7 @@ export default function createSeed() {
       4,
       true,
       ago(2, 3),
-      "bricolage-2.webp"
+      "petites-reparations.webp"
     ),
   ];
 

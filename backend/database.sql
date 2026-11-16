@@ -113,13 +113,13 @@ INSERT INTO categories (titre, description, category_image) VALUES
 
 INSERT INTO services (titre, description, user_id, category_id, status, created_at, illustration) VALUES
 ('Aide au grand ménage de printemps', 'Je vous aide à faire le grand ménage : vitres, placards, tri et rangement. Disponible les samedis matin sur Lyon et ses environs.', 2, 1, TRUE, '2024-06-03 10:00:00', NULL),
-('Repassage à domicile', 'Une pile de linge qui déborde ? Je passe chez vous une à deux heures en semaine pour vous aider avec le repassage.', 2, 1, TRUE, '2024-06-10 14:30:00', '/uploads/services/menage-2.webp'),
-('Courses et compagnie pour nos aînés', 'Je propose de faire les courses et de passer un moment convivial avec une personne âgée isolée, le week-end.', 5, 2, TRUE, '2024-06-05 09:15:00', '/uploads/services/aines-1.webp'),
+('Repassage à domicile', 'Une pile de linge qui déborde ? Je passe chez vous une à deux heures en semaine pour vous aider avec le repassage.', 2, 1, TRUE, '2024-06-10 14:30:00', '/uploads/services/repassage.webp'),
+('Courses et compagnie pour nos aînés', 'Je propose de faire les courses et de passer un moment convivial avec une personne âgée isolée, le week-end.', 5, 2, TRUE, '2024-06-05 09:15:00', '/uploads/services/courses-compagnie.webp'),
 ('Accompagnement aux rendez-vous médicaux', 'Je peux accompagner une personne âgée à ses rendez-vous médicaux en transports en commun dans Lille.', 5, 2, FALSE, '2024-06-12 16:00:00', NULL),
-('Initiation au smartphone', 'Apprenez à utiliser votre smartphone : appels vidéo, photos, messagerie, applications utiles. Séances d''une heure, à votre rythme.', 4, 3, TRUE, '2024-06-04 18:00:00', '/uploads/services/numerique-1.webp'),
-('Dépannage ordinateur', 'Ordinateur lent, virus, imprimante qui ne fonctionne plus ? Je regarde ça avec vous, à distance ou chez vous à Nantes.', 4, 3, TRUE, '2024-06-08 11:45:00', '/uploads/services/numerique-2.webp'),
-('Montage de meubles', 'Je monte vos meubles en kit (armoires, lits, étagères). J''apporte mes outils.', 3, 4, TRUE, '2024-06-06 08:30:00', '/uploads/services/bricolage-1.webp'),
-('Petites réparations du quotidien', 'Fuite de robinet, prise électrique, porte qui grince : je vous aide à réparer les petits tracas de la maison.', 3, 4, TRUE, '2024-06-15 13:20:00', '/uploads/services/bricolage-2.webp');
+('Initiation au smartphone', 'Apprenez à utiliser votre smartphone : appels vidéo, photos, messagerie, applications utiles. Séances d''une heure, à votre rythme.', 4, 3, TRUE, '2024-06-04 18:00:00', '/uploads/services/initiation-smartphone.webp'),
+('Dépannage ordinateur', 'Ordinateur lent, virus, imprimante qui ne fonctionne plus ? Je regarde ça avec vous, à distance ou chez vous à Nantes.', 4, 3, TRUE, '2024-06-08 11:45:00', '/uploads/services/depannage-ordinateur.webp'),
+('Montage de meubles', 'Je monte vos meubles en kit (armoires, lits, étagères). J''apporte mes outils.', 3, 4, TRUE, '2024-06-06 08:30:00', '/uploads/services/montage-meubles.webp'),
+('Petites réparations du quotidien', 'Fuite de robinet, prise électrique, porte qui grince : je vous aide à réparer les petits tracas de la maison.', 3, 4, TRUE, '2024-06-15 13:20:00', '/uploads/services/petites-reparations.webp');
 
 INSERT INTO comments (service_id, user_id, content, created_at) VALUES
 (1, 3, 'Claire a été d''une aide précieuse, l''appartement n''a jamais été aussi propre. Merci !', '2024-06-20 18:00:00'),
